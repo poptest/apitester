@@ -49,6 +49,19 @@ class MyTestCase(unittest.TestCase):
         actual = resp.status_code
         self.assertEqual(expected,actual,msg='注册失败，邮箱不能为空！')
 
+        def test_createuser_04(self):
+            user_data = {
+                "username": "pop33",
+                "tel": "15511110000",
+                "email": "",
+                "password": "123456"
+            }
+            resp = requests.post(self.user_url, data=user_data)
+            print(resp.status_code)
+            expected = 200
+            actual = resp.status_code
+            self.assertEqual(expected, actual, msg='注册失败，邮箱不能为空！')
+
 
 if __name__ == '__main__':
     unittest.main()
