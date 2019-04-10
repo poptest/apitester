@@ -1,0 +1,14 @@
+{
+  "test_data_group_1":{
+    "username": "lily",
+    "password": "123456",
+    "tel": "123",
+    "email": "321@qq.com"
+  },
+  "test_data_group_2":{
+        "username": "joy",
+    "password": "123456",
+    "tel": "888",
+    "email": "888@qq.com"
+  }
+}

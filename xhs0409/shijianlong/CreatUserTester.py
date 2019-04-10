@@ -1,9 +1,11 @@
 import unittest
 import requests
 from config import HOST
-
+from ddt import ddt,file_data
 
 class MyTestCase(unittest.TestCase):
+
+    @file_data("")
     def test_createuser_01(self):
         self.user_url = HOST + '/user'
         # 定义一个字典.
