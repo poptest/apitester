@@ -1,12 +1,12 @@
 import unittest
 import requests
-from config import HOST
+from xhs0409.ChaiMengqian.config import HOST
 
 class user_get(unittest.TestCase):
 
     def test_get01(self):
         #获取全部用户信息
-        url = HOST + "user"
+        url = HOST + "/user"
         resp01 = requests.get(url)
         print(resp01)
         print(resp01.url)
