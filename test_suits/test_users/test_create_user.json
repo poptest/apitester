@@ -1,0 +1,18 @@
+{
+  "case01":{
+    "username": "Junyi2",
+    "password": "3456789",
+    "email": "qa@wefwef.com",
+    "tel": "187378713",
+    "status_code": "200",
+    "exp_str": "Junyi2"
+  },
+  "case02": {
+    "username": "Junyi233",
+    "password": "345678933",
+    "email": "qa@wefwef.com",
+    "tel": "187378713",
+    "status_code": "300",
+    "exp_str": "Junyi233"
+  }
+}
