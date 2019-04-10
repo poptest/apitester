@@ -3,7 +3,7 @@ import requests
 from config import HOST
 
 class MyTestCase(unittest.TestCase):
-    def test_normal(self):
+    def test_normal(self):  #正常手机号
         user_url = HOST+"/user"
         user_date = {
              "username": "test003",
@@ -16,7 +16,7 @@ class MyTestCase(unittest.TestCase):
         # print(resp.content)
 
 
-    def test_wrongemail(self):
+    def test_wrongemail(self): #错误邮箱
         user_url = HOST+"/user"
         user_date = {
              "username": "test003",
@@ -28,7 +28,7 @@ class MyTestCase(unittest.TestCase):
         print(resp02.status_code)
         # print(resp.content)
 
-    def test_noemail(self):
+    def test_noemail(self):     #无邮箱注册
         user_url = HOST+"/user"
         user_date = {
              "username": "test003",
@@ -40,7 +40,7 @@ class MyTestCase(unittest.TestCase):
         print(resp03.status_code)
         print(resp03.content)
 
-    def test_wrongUsername(self):
+    def test_wrongUsername(self):    #含有特殊字符的用户名注册
         user_url = HOST+"/user"
         user_date = {
             "username": "test@003",
@@ -51,7 +51,7 @@ class MyTestCase(unittest.TestCase):
         resp04 = requests.post(user_url, data=user_date)
         print(resp04.status_code)
         # print(resp04.content)
-    def test_7tel(self):
+    def test_7tel(self):       #7位电话号注册
          user_url = HOST+"/user"
          user_date = {
              "username": "test003",
