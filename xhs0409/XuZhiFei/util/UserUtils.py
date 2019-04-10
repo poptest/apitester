@@ -24,4 +24,5 @@ def if_user_exist_by_tel(tel):
     for user in users_list:
         if user['tel'] == tel:
             return True
+
     return False
