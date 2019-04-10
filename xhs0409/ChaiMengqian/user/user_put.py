@@ -5,7 +5,7 @@ from xhs0409.ChaiMengqian.config import HOST
 class user_put(unittest.TestCase):
     def test_something(self):
         # 更新用户信息
-        user_url = HOST + "user"
+        user_url = HOST + "/user"
         user_data = {
             "username": "chai",
             "password": "2123456789",
