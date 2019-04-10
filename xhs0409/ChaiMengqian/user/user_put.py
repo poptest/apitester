@@ -1,6 +1,6 @@
 import unittest
 import requests
-from config import HOST
+from xhs0409.ChaiMengqian.config import HOST
 
 class user_put(unittest.TestCase):
     def test_something(self):

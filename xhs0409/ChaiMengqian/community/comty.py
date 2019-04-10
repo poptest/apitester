@@ -1,6 +1,6 @@
 import unittest
 import requests
-from config import HOST
+from xhs0409.ChaiMengqian.config import HOST
 
 class community(unittest.TestCase):
 
