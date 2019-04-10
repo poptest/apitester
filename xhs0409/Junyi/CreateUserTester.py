@@ -18,5 +18,6 @@ class MyTestCase(unittest.TestCase):
         print(resp.status_code)
         print(resp.content)
 
+
 if __name__ == '__main__':
     unittest.main()
