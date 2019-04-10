@@ -1,2 +1,2 @@
 # Domain of test environment
-HOST = "http://0.0.0.0:4000"
+HOST = "http://127.0.0.1:6000"

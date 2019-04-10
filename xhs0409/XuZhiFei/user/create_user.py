@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(200, stu_code, "测试账号含有特殊字符，失败")
 
     # 测试手机号码为7位(BUG：2019年04月09日15:14:47)
-    def test_createUser005(self):
+    def test_createUser006(self):
         stu_code = createUserUtil().createUserUtil("zhang@qiang", "2312123", "1593662", "1038764578@qq.com")
         self.assertNotEqual(200, stu_code, "测试手机号码为7位，出现异常")
 
