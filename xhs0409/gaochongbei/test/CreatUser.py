@@ -1,6 +1,8 @@
-import unittest
 import requests
+import unittest
 from config import HOST
+
+
 
 class user_create(unittest.TestCase):
     def test_create01(self):
@@ -12,13 +14,10 @@ class user_create(unittest.TestCase):
             "tel": "1892222333",
             "email": "chai001@qq.com"
         }
-        resp = requests.post(user_url,data=user_data)
-        #期望值：Expected
+        resp = requests.post(user_url, data=user_data)
         Expected =400
-        # Actual：实际值；返回状态码 （.status_code） 例：200
         Actual=resp.status_code
         self.assertEqual(Expected,Actual,msg='注册失败')
-        # 打印内容（.content）
         print(resp.content)
 
     def test_create02(self):
@@ -56,7 +55,6 @@ class user_create(unittest.TestCase):
         self.assertEqual(Expected, Actual, msg='注册失败')
         # 打印内容（.content）
         print(resp.content)
-
     def test_create04(self):
         # 注册用户正常
         user_url = HOST + "/user"
