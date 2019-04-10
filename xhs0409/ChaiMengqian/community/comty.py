@@ -1,12 +1,12 @@
 import unittest
 import requests
-from config import HOST
+from xhs0409.ChaiMengqian.config import HOST
 
 class community(unittest.TestCase):
 
     def test_comty01(self):
         # 获取社区列表
-        url = HOST + "community"
+        url = HOST + "/community"
         resp = requests.get(url)
         print(resp)
         print(resp.url)
